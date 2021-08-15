@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*social links */
+
+.social-links {
+    display: grid;
+    position: fixed;
+    top: 100px;
+    height: 20%;
+    background-color: violet;
+    border-radius: 25px;
+    text-align: right;
+    padding: 10px;
+}
+
+.social-links a {
+    padding: 5px;
+    font-size: larger;
+    margin: 5px;
+    border-radius: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: 1s;
+}
+
+.social-links a:hover {
+    background-color: white;
+    color: violet;
+    transition: 1s;
+}
+
+
+/*my info bar*/
+
+.bar {
+    display: inline-block;
+    cursor: pointer;
+    top: 50%;
+    left: 25%;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/*my info*/
+
+.myinfo {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    z-index: -1;
+}
+
+.info {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    line-height: 2.5;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(211, 211, 235);
+    border-radius: 50px;
+}
+
+.info img {
+    width: 40%;
+    border-radius: 10%;
+}
+
+
+/*title container*/
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.fpanel {
+    background-color: #cf3b3b;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+}
+
+.spanel {
+    background-color: #1B1B2F;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+
+.spanel h1,
+p {
+    font-family: sans-serif;
+    font-weight: 900;
+    border: none;
+    color: rgb(240, 212, 212);
+}
+
+.fpanel h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+    border: none;
+    color: rgb(219, 219, 219);
+}
+
+
+/*title container headings*/
+
+.fpanel h1 {
+    font-size: 12rem;
+    padding: 0;
+    padding-top: 30%;
+}
+
+.spanel h1 {
+    padding-top: 20%;
+    font-size: 9rem;
+}
+
+.spanel h2 {
+    font-size: 2rem;
+}
+
+.spanel span {
+    text-decoration: underline;
+}
+
+
+/*js used classes for animetion*/
+
+.pushside {
+    transition: 1s;
+    margin-left: 0;
+    width: 10%;
+}
+
+.fpanelsetmargin {
+    margin-left: auto;
+}
+
+.invisible {
+    display: none;
+}
+
+.Skills h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Skills {
+    height: 100vh;
+}
+
+.contain {
+    display: flex;
+}
+
+.fimg {
+    width: 30%;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.skill-item {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 1.6rem;
+    transition: 1s;
+    display: grid;
+    margin: 0 20px;
+}
+
+.skill-item:hover {
+    width: 10rem;
+    height: 10rem;
+}
+
+.skill-name {
+    margin: auto auto;
+}
+
+.cpp {
+    background-color: rgb(216, 128, 172);
+}
+
+.java {
+    background-color: rgb(226, 181, 97);
+}
+
+.python {
+    background-color: rgb(103, 202, 103);
+}
+
+.html {
+    background-color: rgb(93, 170, 93);
+}
+
+.css {
+    background-color: rgb(104, 104, 197);
+}
+
+.unity {
+    background-color: rgb(153, 66, 153);
+}
+
+.js {
+    background-color: rgb(177, 68, 68);
+}
+
+.My-projects h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.typeText {
+    font-size: 3rem;
+}
+
+.typeText::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+.My-projects {
+    height: 100vh;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 40%;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 2.5;
+    background-color: rgb(211, 211, 235);
+}
+
+
+/*.Contact-Me {
+    margin: 20% 0;
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+.contact-title {
+    text-align: center;
+    padding: 40px;
+    background-color: lightslategray;
+    color: white;
+    font-size: 2rem;
+}
+
+.contact-item {
+    margin: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.contact-body {
+    padding: 0 50px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input,
+select,
+textarea {
+    margin-left: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: solid 2px grey;
+    width: 20rem;
+    resize: vertical;
+    background-color: lightgrey;
+}*/
